@@ -10,5 +10,5 @@
 ### Soil & precip data
 - https://www.tucson.ars.ag.gov/dap/
 - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006WR005702
-
+- https://ameriflux.lbl.gov/sites/siteinfo/US-Wkg#overview
 Locations: https://usdaars.maps.arcgis.com/home/item.html?id=fe4ac74f13484a169899b166159e0bb5
