@@ -15,10 +15,10 @@
 - Lucky Hills (LH) subwatershed:
   - LHMet
   - LHTrench 
-  - **TDRL1** -> 30 min, 2007-present
+  - **TDRL1** -> 30 min, 2007-present, UTM NAD83 EAST 589567 NORTH 3512290 ELEV 1366
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr17.out
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr18.out
-  - **TDRL2** -> 30 min, 2008-present
+  - **TDRL2** -> 30 min, 2008-present, UTM NAD83 EAST 589793 NORTH 3512420 ELEV 1373
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr17.out
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr18.out   
 - Grass dominated Kendall(KEN) subwatershed:
