@@ -8,7 +8,7 @@
 - Sensor Doc: https://www.tucson.ars.ag.gov/dap/dap_docs/soil.html
 - Data: 
   - https://www.tucson.ars.ag.gov/dap/
-  - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/
+  - https://www.tucson.ars.ag.gov/metDAP/
 
 
 **SWRC 2 main Vegetative Covers**
