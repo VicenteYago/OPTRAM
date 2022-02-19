@@ -3,6 +3,8 @@
 
 ## Data
 
+### Sensor
+
 ### SWRC Soil Hydrology Data
 
 - Sensor Doc: https://www.tucson.ars.ag.gov/dap/dap_docs/soil.html
@@ -31,7 +33,13 @@
 
   TDR = Time Domain Reflectometer.
 
+### Satellite 
 
+Rscript s2.R modelo_json AOI name date1 date2
+
+```{bash}
+Rscript inputs-config.json ../WB-boundary/boundary.shp 'Walnut-Gulch' '2017-01-01' '2018-01-01'
+```
 
 
 ## DATASOURCES
