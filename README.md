@@ -35,8 +35,6 @@
 
 ### Satellite 
 
-Rscript s2.R modelo_json AOI name date1 date2
-
 ```{bash}
 Rscript s2.R ./inputs-config.json ./Walnut-Gulch.geojson 'Walnut-Gulch' '2017-01-01' '2018-01-01'
 ./runSentinel.sh ./inputs-config.json ./Walnut-Gulch.geojson 'Walnut-Gulch' '2017-01-01' '2018-02-01'
