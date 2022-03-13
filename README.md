@@ -2,6 +2,24 @@
 
 ![Screenshot_20220222_012713](https://user-images.githubusercontent.com/16523144/155042062-d74f38a0-6004-446a-83d6-0fc55506c40c.png)
 
+## Python set-up 
+
+I recommend to use a python enviroment to avoid messing up your gdal configs
+
+```{bash}
+conda create --name spatial python=3.8
+conda activate spatial
+python -m ipykernel install --user --name=spatial
+
+conda install pandas
+conda install -y -c conda-forge utm
+conda install -y rasterio
+conda install -y -c conda-forge gdal
+conda install -y -c conda-forge folium
+conda install -y --channel conda-forge geopandas
+```
+
+
 
 ## Data
 
