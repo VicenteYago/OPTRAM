@@ -4,14 +4,15 @@
 
 
 ```{bash}
+conda create --name spatial python=3.8
+conda activate spatial
+python -m ipykernel install --user --name=spatial
 
 conda install pandas
 conda install -y -c conda-forge utm
 conda install -y rasterio
 conda install -y -c conda-forge gdal
 conda install -y -c conda-forge folium
-
-
 conda install -y --channel conda-forge geopandas
 ```
 
