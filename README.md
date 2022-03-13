@@ -4,7 +4,7 @@
 
 ## Python set-up 
 
-I recommend to use a python enviroment to install the libs to avoid messing up your gdal configs
+I recommend to use a python enviroment to avoid messing up your gdal configs
 
 ```{bash}
 conda create --name spatial python=3.8
