@@ -1,0 +1,102 @@
+Registered S3 method overwritten by 'geojsonsf':
+  method        from   
+  print.geojson geojson
+Searching for a valid Google Cloud S$preprocess
+[1] TRUE
+
+$s2_levels
+[1] "l1c" "l2a"
+
+$sel_sensor
+[1] "s2a" "s2b"
+
+$online
+[1] T[2022-02-22 00:08:02] #### Starting sen2r execution. ####
+Loading required namespace: stringi
+Registered S3 method overwritten by 'geojsonlint':
+  method         from 
+  print.location dplyr
+[2022-02-22 00:08:03] Searching for available SAFE products...
+[2022-02-22 00:08:03] Downloading and creating the vector of Sentinel-2
+       tiles (this happens once)...
+[2022-02-22 00:08:04] Querying Google Cloud (this can take a very long
+       time)...
+[2022-02-22 00:09:26] Computing output names...
+Linking to GEOS 3.8.0, GDAL 3.0.4, PROJ 6.3.1
+Spherical geometry (s2) switched off
+Welcome to sen2r. To use the package from a GUI, launch
+ > sen2r()
+Documentation: https://sen2r.ranghetti.info
+Help and bug report: https://github.com/ranghetti/sen2r/issues
+[2022-02-22 00:09:27] Starting to download the required level-2A SAFE
+       products.
+[2022-02-22 00:09:27] Check if products are available for download...
+[2022-02-22 00:09:28] Downloading Sentinel-2 image 1 of 21
+       (S2A_MSIL2A_20190201T175551_N0211_R141_T12SWA_20190201T221507.SAFE)...
+[2022-02-22 00:09:39] Downloading Sentinel-2 image 2 of 21
+       (S2B_MSIL2A_20190130T180609_N0211_R041_T12SWA_20190130T202640.SAFE)...
+[2022-02-22 00:10:13] Downloading Sentinel-2 image 3 of 21
+       (S2B_MSIL2A_20190127T175619_N0211_R141_T12SWA_20190127T215344.SAFE)...
+[2022-02-22 00:10:24] Downloading Sentinel-2 image 4 of 21
+       (S2A_MSIL2A_20190125T180631_N0211_R041_T12SWA_20190125T203157.SAFE)...
+[2022-02-22 00:11:02] Downloading Sentinel-2 image 5 of 21
+       (S2A_MSIL2A_20190122T175641_N0211_R141_T12SWA_20190122T220324.SAFE)...
+[2022-02-22 00:11:12] Downloading Sentinel-2 image 6 of 21
+       (S2B_MSIL2A_20190120T180649_N0211_R041_T12SWA_20190120T203928.SAFE)...
+[2022-02-22 00:11:50] Downloading Sentinel-2 image 7 of 21
+       (S2B_MSIL2A_20190117T175659_N0211_R141_T12SWA_20190117T214954.SAFE)...
+[2022-02-22 00:12:02] Downloading Sentinel-2 image 8 of 21
+       (S2A_MSIL2A_20190115T180711_N0211_R041_T12SWA_20190115T202259.SAFE)...
+[2022-02-22 00:12:38] Downloading Sentinel-2 image 9 of 21
+       (S2A_MSIL2A_20190112T175711_N0211_R141_T12SWA_20190112T202931.SAFE)...
+[2022-02-22 00:12:49] Downloading Sentinel-2 image 10 of 21
+       (S2B_MSIL2A_20190110T180729_N0211_R041_T12SWA_20190110T203331.SAFE)...
+[2022-02-22 00:13:14] Downloading Sentinel-2 image 11 of 21
+       (S2B_MSIL2A_20190107T175729_N0211_R141_T12SWA_20190107T201819.SAFE)...
+[2022-02-22 00:13:25] Downloading Sentinel-2 image 12 of 21
+       (S2A_MSIL2A_20190105T180731_N0211_R041_T12SWA_20190105T201807.SAFE)...
+[2022-02-22 00:13:58] Downloading Sentinel-2 image 13 of 21
+       (S2A_MSIL2A_20190102T175731_N0211_R141_T12SWA_20190102T203047.SAFE)...
+[2022-02-22 00:14:08] Downloading Sentinel-2 image 14 of 21
+       (S2B_MSIL2A_20181231T180739_N0211_R041_T12SWA_20181231T201825.SAFE)...
+[2022-02-22 00:14:46] Downloading Sentinel-2 image 15 of 21
+       (S2B_MSIL2A_20181228T175739_N0211_R141_T12SWA_20181228T214421.SAFE)...
+[2022-02-22 00:14:57] Downloading Sentinel-2 image 16 of 21
+       (S2A_MSIL2A_20181226T180741_N0211_R041_T12SWA_20181226T201157.SAFE)...
+[2022-02-22 00:15:33] Downloading Sentinel-2 image 17 of 21
+       (S2A_MSIL2A_20181223T175741_N0211_R141_T12SWA_20181223T202925.SAFE)...
+[2022-02-22 00:15:45] Downloading Sentinel-2 image 18 of 21
+       (S2B_MSIL2A_20181221T180749_N0211_R041_T12SWA_20181221T222421.SAFE)...
+[2022-02-22 00:16:17] Downloading Sentinel-2 image 19 of 21
+       (S2B_MSIL2A_20181218T175739_N0211_R141_T12SWA_20181218T214924.SAFE)...
+[2022-02-22 00:16:29] Downloading Sentinel-2 image 20 of 21
+       (S2A_MSIL2A_20181216T180741_N0211_R041_T12SWA_20181216T201428.SAFE)...
+[2022-02-22 00:17:03] Downloading Sentinel-2 image 21 of 21
+       (S2A_MSIL2A_20181213T175731_N0211_R141_T12SWA_20181213T202707.SAFE)...
+[2022-02-22 00:17:17] Download of level-2A SAFE products terminated.
+[2022-02-22 00:17:17] Starting to download the required level-1C SAFE
+       products.
+No L1C images are needed.
+[2022-02-22 00:17:17] Download of level-1C SAFE products terminated.
+[2022-02-22 00:17:17] Updating output names...
+[2022-02-22 00:17:18] Starting running processing operations on
+       multiple (8) parallel cores...
+Note: logging messages are not shown during this phase, since it is not
+possible to send it to standard output. To see them, send messages to
+an external log file or use a different processing order (by_date or
+by_steps).
+[2022-02-22 00:20:02] Processing operations on multiple parallel cores
+       was done.
+╔══════════════════════════════════════════════════════════════════════
+║ sen2r Processing Report
+╟──────────────────────────────────────────────────────────────────────
+║ Dates to be processed based on processing parameters: 21
+║ Processing completed for: all expected dates.
+╚══════════════════════════════════════════════════════════════════════
+[2022-02-22 00:20:04] #### sen2r session terminated. ####
+The processing chain can be re-launched with the command:
+  sen2r("/tmp/RtmpcApW7V/proc_par/s2proc_20220222_000802.json")
+Warning message:
+The parameter file was created with an old version of the package (this
+could lead to errors). 
+                                                      |=============                                                         |  19%  |                                                                              |=================                                                     |  24%  |                                                                              |====================                                                  |  29%  |                                                                              |=======================                                               |  33%  |                                                                              |===========================                                           |  38%  |                                                                              |==============================                                        |  43%  |                                                                              |=================================                                     |  48%  |                                                                              |=====================================                                 |  52%  |                                                                              |========================================                              |  57%  |                                                                              |===========================================                           |  62%  |                                                                              |===============================================                       |  67%  |                                                                              |==================================================                    |  71%  |                                                                              |=====================================================                 |  76%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  86%  |                                                                              |===============================================================       |  90%  |                                                                              |===================================================================   |  95%  |                                                                              |======================================================================| 100%
