@@ -17,6 +17,7 @@ conda install -y rasterio
 conda install -y -c conda-forge gdal
 conda install -y -c conda-forge folium
 conda install -y --channel conda-forge geopandas
+conda install -y haversine
 ```
 
 
