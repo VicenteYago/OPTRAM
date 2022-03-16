@@ -37,19 +37,29 @@ conda install -y --channel conda-forge geopandas
 - Lucky Hills (LH) subwatershed:
   - LHMet
   - LHTrench 
-  - **TDRL1** -> 30 min, 2007-present, UTM NAD83 EAST 589567 NORTH 3512290 ELEV 1366
+  - **TDRL1** -> 30 min UTM NAD83 EAST 589567 NORTH 3512290 ELEV 1366
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr17.out
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr18.out
-  - **TDRL2** -> 30 min, 2008-present, UTM NAD83 EAST 589793 NORTH 3512420 ELEV 1373
+  - **TDRL2** -> 30 min UTM NAD83 EAST 589793 NORTH 3512420 ELEV 1373
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr17.out
     - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr18.out   
 - Grass dominated Kendall(KEN) subwatershed:
   - KNMet
-  - KNTrench
-  - KSTrench 
+  - KNTrench 
+  - KSTrench
   - TDRK1
-  - **TDRK2** -> 30 min, 2009-present
+  - TDRK2 
+- RAINGAGE SITES
+  - **RG13** -> 30 min, 2008-present, UTM NAD83 EAST 586110 NORTH 3510185 ELEV 1334
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg13vt17.out 
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg13vt18.out 
+  - **RG18** -> 30 min, 2008-present, UTM NAD83 EAST 586710 NORTH 3508098 ELEV 1365
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg18vt17.out
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg18vt18.out   -> NO SOIL DATA
 
+  - **RG28** -> 30 min, 2008-present, UTM NAD83 EAST 590624 NORTH 3509990 ELEV 1369
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg28vt17.out
+    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg28vt18.out
 
   TDR = Time Domain Reflectometer.
 
