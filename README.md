@@ -20,6 +20,8 @@ conda install -y --channel conda-forge geopandas
 conda install -y haversine
 conda install -y dask 
 conda install -y python-graphviz
+conda install -y requests
+conda install -y aiohttp
 ```
 
 
