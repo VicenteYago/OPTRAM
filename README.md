@@ -9,6 +9,8 @@ I recommend to use a python env to avoid messing up your gdal configs
 ```{bash}
 conda create --name spatial python=3.8
 conda activate spatial
+conda install -c anaconda ipykernel
+
 python -m ipykernel install --user --name=spatial
 
 conda install pandas
@@ -23,8 +25,8 @@ conda install -y python-graphviz
 conda install -y requests
 conda install -y aiohttp
 conda install -y fastparquet
-conda install -y datashader
-conda install -y colorcet
+#conda install -y datashader
+#conda install -y colorcet
 
 ```
 
