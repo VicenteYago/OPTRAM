@@ -22,8 +22,8 @@ conda install -y dask
 conda install -y python-graphviz
 conda install -y requests
 conda install -y aiohttp
-conda install -y pyarrow
 conda install -y fastparquet
+conda install -y datashader
 ```
 
 
