@@ -27,7 +27,7 @@ conda install -y aiohttp
 conda install -y fastparquet
 #conda install -y datashader
 #conda install -y colorcet
-
+conda install -c conda-forge vaex
 ```
 
 
