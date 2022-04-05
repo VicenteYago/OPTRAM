@@ -28,6 +28,7 @@ conda install -y fastparquet
 #conda install -y datashader
 #conda install -y colorcet
 conda install -c conda-forge vaex
+conda install -y holoview
 ```
 
 
