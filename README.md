@@ -46,26 +46,17 @@ conda install -c conda-forge vaex
 conda install -y holoview
 ```
 
-## Data fusion
-
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/scheme_full.png)
-
-
-
 ## NDVI-STR space
 
 ![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
 
-
-
 ## Results 
 
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
-
+![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
 
 ## W maps
 
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/W_maps_1.png)
+![example_W_1](https://github.com/VicenteYago/OPTRAM/blob/main/img/img/example_W_1.png)
 
 
 
