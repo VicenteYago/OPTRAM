@@ -1,4 +1,4 @@
-![WG-nologo.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/WG-nologo.png)
+![WG-nologo.png](img/WG-nologo.png)
 
 # Implementation of Optical Trapezoid Model (OPTRAM) with Sentinel 2 
 
@@ -48,21 +48,21 @@ conda install -y holoview
 
 ## Data fusion
 
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/scheme_full.png)
+![scheme_full](img/scheme_full.png)
 
 
 
 ## NDVI-STR space
 
-![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
+![NDVI_STR.png](img/NDVI_STR.png)
 
 
 
 ## Results 
 
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
+![scheme_full](img/scenario1_2_comparison.png)
 
 
 ## W maps
 
-![scheme_full](https://github.com/VicenteYago/OPTRAM/blob/main/img/W_maps_1.png)
+![scheme_full](img/W_maps_1.png)
