@@ -1,6 +1,21 @@
-# OPTRAM
+![WG-nologo.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/WG-nologo.png)
 
-![Screenshot_20220222_012713](https://user-images.githubusercontent.com/16523144/155042062-d74f38a0-6004-446a-83d6-0fc55506c40c.png)
+# Implementation of Optical Trapezoid Model (OPTRAM) with Sentinel 2 
+
+The Optical Trapezoid Model (OPTRAM) was developed to overcome the limitations of the Thermal-Optical Trapezoid Model (TOTRAM), i.e., non aplicability to satellites that do not provide thermal data, and the requirement of parametrization for each individual date. Based on Short Wave Infrared Reflectance (SWIR), Normalized Difference Vegetation Index (NDVI) and in situ measurements at surface level, the OPTRAM has demostrated to be a significant advance for remote sensing of soil moisture with great importance to undestand seasonal dynamics, water resource planning and agricultural production.
+
+The present work its a implementation of the OPTRAM based on the paper [sadegui et al 2017](https://www.sciencedirect.com/science/article/abs/pii/S0034425717302493), however some differences are worth mentioning: 
+
+- Only the Galnut Gulch Watershed area has been modelized, leaving aside Little Washita.
+- 71 Sentinel2 BOA (Level 2A) images corresponding to 2019 TOA (Level 1C) have been used, in contrast to the 17 images corresponding to the year 2015 used in the article. Because of BOA level, radiometric, atmospheric and geometric corrections were not needed.
+
+- The Sentinel2 [SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm) band was used as a single mask to filter water bodies, clouds, saturated pixels, etc, as a consequence, the clustering and water body classification models of the original article were not necessary.
+
+- Both methods for the estimation of the $\theta_d$, $\theta_w$ coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
+
+
+Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
+
 
 ## Python set-up 
 
@@ -31,72 +46,17 @@ conda install -c conda-forge vaex
 conda install -y holoview
 ```
 
+## NDVI-STR space
 
+![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
 
-## Data
+## Results 
 
-### Sensor
+![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
 
-### SWRC Soil Hydrology Data
+## W maps
 
-- Sensor Doc: https://www.tucson.ars.ag.gov/dap/dap_docs/soil.html
-- Data: 
-  - https://www.tucson.ars.ag.gov/dap/
-  - https://www.tucson.ars.ag.gov/metDAP/
-
-
-**SWRC 2 main Vegetative Covers**
-- Lucky Hills (LH) subwatershed:
-  - LHMet
-  - LHTrench 
-  - **TDRL1** -> 30 min UTM NAD83 EAST 589567 NORTH 3512290 ELEV 1366
-    - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr17.out
-    - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l1tdr18.out
-  - **TDRL2** -> 30 min UTM NAD83 EAST 589793 NORTH 3512420 ELEV 1373
-    - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr17.out
-    - https://www.tucson.ars.ag.gov/metDAP/SoilProfileSiteData/l2tdr18.out   
-- Grass dominated Kendall(KEN) subwatershed:
-  - KNMet
-  - KNTrench 
-  - KSTrench
-  - TDRK1
-  - TDRK2 
-- RAINGAGE SITES
-  - **RG13** -> 30 min, 2008-present, UTM NAD83 EAST 586110 NORTH 3510185 ELEV 1334
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg13vt17.out 
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg13vt18.out 
-  - **RG18** -> 30 min, 2008-present, UTM NAD83 EAST 586710 NORTH 3508098 ELEV 1365
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg18vt17.out
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg18vt18.out   -> NO SOIL DATA
-
-  - **RG28** -> 30 min, 2008-present, UTM NAD83 EAST 590624 NORTH 3509990 ELEV 1369
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg28vt17.out
-    - https://www.tucson.ars.ag.gov/metDAP/RaingageSiteData/rg28vt18.out
-
-  TDR = Time Domain Reflectometer.
-
-### Satellite 
-
-```{bash}
-Rscript s2.R ./inputs-config.json ./Walnut-Gulch.geojson 'Walnut-Gulch' '2017-01-01' '2018-01-01'
-./runSentinel.sh ./inputs-config.json ./Walnut-Gulch.geojson 'Walnut-Gulch' '2017-01-01' '2018-02-01'
-```
-
-## DATASOURCES
-
-- https://nsidc.org/sites/nsidc.org/files/files/data/amsre-validation/nsidc0383-smex04-walnut-gulch-soil-moisture-az.pdf
-- https://nsidc.org/data/search/#keywords=soil+moisture/sortKeys=score,,desc/facetFilters=%257B%257D/pageNumber=1/itemsPerPage=25
-
-
-### Soil & precip data
-- https://www.tucson.ars.ag.gov/dap/
-- https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006WR005702
-- https://ameriflux.lbl.gov/sites/siteinfo/US-Wkg#overview
-
-Locations: 
-- https://usdaars.maps.arcgis.com/home/item.html?id=fe4ac74f13484a169899b166159e0bb5
-
-
+![example_W_1](https://github.com/VicenteYago/OPTRAM/blob/main/img/img/example_W_1.png)
 
 
 
