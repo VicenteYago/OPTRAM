@@ -23,7 +23,11 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
   <img src="img/scheme_full.png" width="300">
 </p>
 
-
+- **1-3** : Sensor processing, the filtering of incomplete sensors will be performed here.
+- **4-8** : Very complex but made easy by [sen2r](http://sen2r.ranghetti.info/index.html) library in R, rasterio and gdal in python.
+- **9**   : This data fusion is key to obtain a full implementation of the OPTRAM model. The sensor readings of each station are matched with the nearest pixels of each image at the acqusition time, allowing for volumetric content water (%) predictions once the model is validated. Aditionally a big speed up is achieved using the parallel library [Dask](https://dask.org/). 
+- **10**  : The Scheme Classification Layer ([SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm)) already computed by Copernicus is used to mask the defective pixels, i.e., clouds, snow, shadows, etc.
+- **11**  : Finally, with the filtered data and inSitu fusion observations the OPTRAM can be fitted.
 
 
 ## NDVI-STR space
