@@ -47,6 +47,7 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
   <img src="img/scenario1_2_comparison.png">
 </p>
 
+𝜃 values estimated by linear regression analysis led to better results, but obviously some underfitted stations are having a very negative effect, learn more about it in the notebook. 
 
 ## W maps
 
