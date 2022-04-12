@@ -17,33 +17,6 @@ The present work its a implementation of the OPTRAM based on the paper [sadegui 
 Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
 
 
-## Python set-up 
-
-I recommend to use a python env to avoid messing up your gdal configs
-
-```{bash}
-conda create --name spatial python=3.8
-conda activate spatial
-conda install -c anaconda ipykernel
-
-python -m ipykernel install --user --name=spatial
-
-conda install pandas
-conda install -y -c conda-forge utm
-conda install -y rasterio
-conda install -y -c conda-forge gdal
-conda install -y -c conda-forge folium
-conda install -y --channel conda-forge geopandas
-conda install -y haversine
-conda install -y dask 
-conda install -y python-graphviz
-conda install -y requests
-conda install -y aiohttp
-conda install -y fastparquet
-#conda install -y datashader
-#conda install -y colorcet
-```
-
 ## NDVI-STR space
 
 ![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
