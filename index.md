@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 ![WG-nologo.png](img/WG-nologo.png)
 
 # Implementation of Optical Trapezoid Model (OPTRAM) with Sentinel 2 
