@@ -48,25 +48,30 @@ conda install -y holoview
 
 ## Data fusion
 
-<div style="width: 3%; height: 3%">
-  
-![scheme_full](img/scheme_full.png)
-  
-</div>
+
+<p align="center">
+  <img src="img/scheme_full.png" width="300">
+</p>
 
 
 
 
 ## NDVI-STR space
 
-![NDVI_STR.png](img/NDVI_STR.png)
+<p align="center">
+  <img src="img/NDVI_STR.png">
+</p>
 
 
 ## Results 
 
-![scheme_full](img/scenario1_2_comparison.png)
+<p align="center">
+  <img src="img/scenario1_2_comparison.png">
+</p>
 
 
 ## W maps
 
-![scheme_full](img/W_maps_1.png)
+<p align="center">
+  <img src="img/W_maps_1.png">
+</p>
