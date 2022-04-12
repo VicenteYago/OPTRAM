@@ -51,3 +51,9 @@ Yes
 #### Are your results different from the original paper ? 
 Yes
 
+#### W maps are great but, how theta maps are built ? 
+Yes
+
+#### I spotted an error on your code / I need some aclarations ... 
+Yes
+
