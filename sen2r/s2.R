@@ -7,7 +7,7 @@
 
  print(args) 
  sen2r::check_gcloud('/home/rstudio/google-cloud-sdk')
- sen2r::write_scihub_login("vyago", "8DeWE7jpWAhFYe9L9BzdPmZFq")
+ sen2r::write_scihub_login("your_account", "your_password")
  inputs<- jsonlite::fromJSON(json_model)
  inputs$extent <- AOI
  inputs$extent_name <- name
