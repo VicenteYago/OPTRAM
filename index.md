@@ -21,7 +21,7 @@ The present work its a implementation of the OPTRAM based on the paper [sadegui 
 
 - The Sentinel2 [SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm) band was used as a single mask to filter water bodies, clouds, saturated pixels, etc, as a consequence, the clustering and water body classification models of the original article were not necessary.
 
-- Both methods for the estimation of the \\(\\theta_d\)\\ , \\(\\theta_w\)\\ coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
+- Both methods for the estimation of the \\(\theta_d \\) , \\(\theta_w \\) coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
 
 
 Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
