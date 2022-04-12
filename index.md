@@ -40,7 +40,7 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
   <img src="img/NDVI_STR.png">
 </p>
 
-The higher range of NDVI values is orphaned of measurements, this will introduce additional uncertainty when actually satured pixels are confronted with the OPTRAM for predictions.
+The higher range of NDVI (>0.4) values is orphaned of measurements, this will introduce additional uncertainty when actually satured pixels are confronted with the OPTRAM for predictions.
 
 ## Results 
 
