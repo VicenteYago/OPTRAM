@@ -57,7 +57,7 @@ conda install -y holoview
 ## W maps
 
 <p align="center">
-    ![example_W_1](https://github.com/VicenteYago/OPTRAM/blob/main/img/example_W_2.png)
+  <img src=https://github.com/VicenteYago/OPTRAM/blob/main/img/example_W_2.png/>
 </p>
 
 
