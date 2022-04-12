@@ -40,6 +40,7 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
   <img src="img/NDVI_STR.png">
 </p>
 
+The higher range of NDVI values is orphaned of measurements, this will introduce additional uncertainty when actually satured pixels are confronted with the OPTRAM for predictions.
 
 ## Results 
 
@@ -55,4 +56,4 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
   <img src="img/W_maps_1.png">
 </p>
 
-Its to be noted that the W maps are not in volumetric units, this is achieved by applying the regression model \\(\theta\\) ~ \\($W$\\), but its not cover by the original paper. In a coming notebook several alternatives to obtain the volumetric \\(\theta\\) maps will be implemented.
+Its to be noted that the W maps are not in volumetric units, this is achieved by applying the regression model \\(\theta\\) ~ \\(W\\), but its not cover by the original paper. In a coming notebook several alternatives to obtain the volumetric \\(\theta\\) maps will be implemented.
