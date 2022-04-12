@@ -19,24 +19,35 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
 
 ## NDVI-STR space
 
+The wet and dry edges are fitted by visual matching as recomended by the authors.
 ![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
+
+`inSitu_obs` are the images pixels corresponing to the soil moisture stations al the time of the acquisition by the sentinel2 satellites.
 
 ## Results 
 
 ![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
 
-## W maps
+More detailed insight about the heavy scatter can be found in the notebook, section __Model parametrization__.
 
+## W maps
+Normalized soil moisture content were also computed for all images.
 <p align="center">
   <img src=https://github.com/VicenteYago/OPTRAM/blob/main/img/example_W_2.png/>
 </p>
 
+The SCL band is applied at each image, masking diferent pixels at each date.
 
 
 
+## Q&A 
 
+#### Its your code fully reproducible ? 
+Yes
 
+#### Why units differ from the original paper, I mean why the estimate soil moisture is in % an not in cm3/cm3^-1? 
+Yes
 
-
-
+#### Are your results different from the original paper ? 
+Yes
 
