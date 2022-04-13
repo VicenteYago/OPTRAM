@@ -38,22 +38,34 @@ Normalized soil moisture content were also computed for all images.
 
 The SCL band is applied at each image, masking diferent pixels at each date.
 
-
+## Reproduce it 
+1. Clone the repo
+```{python}
+git lfs install
+git clone https://github.com/VicenteYago/OPTRAM.git
+```
+2. Set up the enviroment
+```{python}
+conda env create -f environment.yml
+conda activate optram
+# make the env available as kernel inside jupyter notebook
+python -m ipykernel install --user --name=optram
+```
 
 ## Q&A 
 
 #### Its your code fully reproducible ? 
-Yes
+Yes, the repo has all the files, and time consuming objects are already computed and ready to be load inside the notebook. But if you want to build it from the scratch you will have to download the original Sentinel2 SAFE products. 
 
 #### Why units differ from the original paper, I mean why the estimate soil moisture is in % an not in cm3/cm3^-1? 
-Yes
+The article has 𝜃 in gravimetric units while the implementation has it in volumetric units. The reason is the South Watershed Reseach Center has the SM5 or 𝜃 in the latter unit, and I have not been able to find a direct conversion between them.
 
 #### Are your results different from the original paper ? 
-Yes
+In some extent yes, this may be due to the fact that its not a exact replica i.e., it is not the same sampling year the volume of images used are very different etc. Anyways my results are a bit worse, but I think the notebook provides a good insight about why may be the reason. And of course there may be mistakes about the implementation.
 
-#### W maps are great but, how theta maps are built ? 
-Yes
+#### W maps are great but what about 𝜃 maps ? 
+W maps has the disadvantage that they are no different from a water index such as NDWI in that they are a normalized measure. The OPTRAM solves this as its able to provide actually physical predictions about the soil moisture in volumetric/gravimetric units. The 𝜃 maps are built by applying the 𝜃 ~ W regression model but its not cover in the original paper, however in a coming notebook several alternatives to obtain the volumetric 𝜃 maps will be implemented.
 
-#### I spotted an error on your code / I need some aclarations ... 
-Yes
+#### I spotted an error/optimization in your code, how can I proceed ? 
+In both situations I would be very grateful, you can open an issue and report your findings. I am aware that there may be errors, but that is why I made this repository, so that we can improve our understanding of this great model.
 
