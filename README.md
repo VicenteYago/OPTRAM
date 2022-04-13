@@ -52,6 +52,8 @@ conda activate optram
 python -m ipykernel install --user --name=optram
 ```
 
+Also you can view it in [nbviewer](https://nbviewer.org/github/VicenteYago/OPTRAM/blob/main/OPTRAM.ipynb).
+
 ## Q&A 
 
 #### Its your code fully reproducible ? 
