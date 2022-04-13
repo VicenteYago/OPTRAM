@@ -11,59 +11,49 @@ The present work its a implementation of the OPTRAM based on the paper [sadegui 
 
 - The Sentinel2 [SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm) band was used as a single mask to filter water bodies, clouds, saturated pixels, etc, as a consequence, the clustering and water body classification models of the original article were not necessary.
 
-- Both methods for the estimation of the $\theta_d$, $\theta_w$ coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
+- Both methods for the estimation of the 𝜃𝑑, 𝜃𝑤 coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
 
 
 Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
 
 
-## Python set-up 
-
-I recommend to use a python env to avoid messing up your gdal configs
-
-```{bash}
-conda create --name spatial python=3.8
-conda activate spatial
-conda install -c anaconda ipykernel
-
-python -m ipykernel install --user --name=spatial
-
-conda install pandas
-conda install -y -c conda-forge utm
-conda install -y rasterio
-conda install -y -c conda-forge gdal
-conda install -y -c conda-forge folium
-conda install -y --channel conda-forge geopandas
-conda install -y haversine
-conda install -y dask 
-conda install -y python-graphviz
-conda install -y requests
-conda install -y aiohttp
-conda install -y fastparquet
-#conda install -y datashader
-#conda install -y colorcet
-```
-
 ## NDVI-STR space
 
+The wet and dry edges are fitted by visual matching as recomended by the authors.
 ![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
+
+`inSitu_obs` are the images pixels corresponing to the soil moisture stations al the time of the acquisition by the sentinel2 satellites.
 
 ## Results 
 
 ![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
 
-## W maps
+More detailed insight about the heavy scatter can be found in the notebook, section __Model parametrization__.
 
+## W maps
+Normalized soil moisture content were also computed for all images.
 <p align="center">
   <img src=https://github.com/VicenteYago/OPTRAM/blob/main/img/example_W_2.png/>
 </p>
 
+The SCL band is applied at each image, masking diferent pixels at each date.
 
 
 
+## Q&A 
 
+#### Its your code fully reproducible ? 
+Yes
 
+#### Why units differ from the original paper, I mean why the estimate soil moisture is in % an not in cm3/cm3^-1? 
+Yes
 
+#### Are your results different from the original paper ? 
+Yes
 
+#### W maps are great but, how theta maps are built ? 
+Yes
 
+#### I spotted an error on your code / I need some aclarations ... 
+Yes
 
