@@ -11,6 +11,7 @@ The Optical Trapezoid Model (OPTRAM) was developed to overcome the limitations o
 The present work its a implementation of the OPTRAM based on the paper [sadegui et al 2017](https://www.sciencedirect.com/science/article/abs/pii/S0034425717302493), however some differences are worth mentioning: 
 
 - Only the Galnut Gulch Watershed area has been modelized, leaving aside Little Washita.
+
 - 71 Sentinel2 BOA (Level 2A) images from 2019 were used, in contrast to the 17 images corresponding to the year 2015 used in the article. Because of BOA level, radiometric, atmospheric and geometric corrections were not needed.
 
 - The Sentinel2 [SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm) band was used as a single mask to filter water bodies, clouds, saturated pixels, etc, as a consequence, the clustering and water body classification models of the original article were not necessary.
