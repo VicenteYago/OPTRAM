@@ -1,5 +1,5 @@
 ## IMPORTANT
-**This project is being expanded to include a new area called **Little Washita**. The original code is located in the directory `/1-Walnut-Gulch`**
+**This project is being expanded to include a new area called **Little Washita**. The original code is located in the directory `/1-WalnutGulch`**
 
 
 ![WG-nologo.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/WG-nologo.png)
