@@ -1,4 +1,4 @@
-## IMPORTANT
+## UPDATE (29/07/2022)
 **This project is being expanded to include a new area called **Little Washita**. The original code is located in the directory `/1-WalnutGulch`**
 
 
