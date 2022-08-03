@@ -13,7 +13,7 @@ sudo docker ps
 ./toDocker <container-id>
 ```
 
-### 2 - Configure GCLOUD 
+### 3 - Configure GCLOUD 
 
 ```{bash}
 cd /home/google-cloud-sdk/
@@ -22,12 +22,12 @@ cd /home/google-cloud-sdk/
 
 And log in with your google account
 
-### 3 - Configure sen2r
+### 4 - Configure sen2r
 ```{r}
 R -e "sen2r::check_gcloud(gsutil_dir='/home/google-cloud-sdk/')"
 ```
 
-### 4 - Run script 
+### 5 - Run script 
 
 ```{bash}
 ./runSentinel.sh ./inputs-config.json ./littleWashita.json 'LittleWashita' '2019-01-01' '2020-01-01'
