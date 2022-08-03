@@ -1,0 +1,17 @@
+version: '3.9'
+services: 
+  sen2watermed:
+    build: .
+    environment: 
+      - PASSWORD=sen2r    
+    volumes: 
+      - ./indices:/home/sen2r/indices
+      - ./l2a:/home/sen2r/l2a
+      - ./out:/home/sen2r/out
+    network_mode: "host"
+
+    logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "3" 
