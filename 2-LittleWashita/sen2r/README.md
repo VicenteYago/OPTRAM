@@ -16,7 +16,7 @@ sudo docker ps
 ### 3 - Configure GCLOUD 
 
 ```{bash}
-cd /home/google-cloud-sdk/
+cd /home/google-cloud-sdk/bin
 ./gcloud init
 ```
 
