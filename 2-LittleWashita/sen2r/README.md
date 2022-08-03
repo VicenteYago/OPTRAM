@@ -4,6 +4,15 @@ sudo docker-compose build
 sudo docker-compose up -d 
 ```
 
+### 2 - Get into the container
+
+```{bash}
+sudo docker ps
+```
+```{bash}
+./toDocker <container-id>
+```
+
 ### 2 - Configure GCLOUD 
 
 ```{bash}
