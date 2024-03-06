@@ -15,6 +15,9 @@ The present work its a implementation of the OPTRAM based on the paper [sadegui 
 - Both methods for the estimation of the 𝜃𝑑, 𝜃𝑤 coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
 
 
+<p align="center">
+  <img src=https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/scheme_full.png/>
+</p>
 Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
 
 
