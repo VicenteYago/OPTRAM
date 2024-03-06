@@ -14,12 +14,20 @@ The present work its a implementation of the OPTRAM based on the paper [sadegui 
 
 - Both methods for the estimation of the 𝜃𝑑, 𝜃𝑤 coefficients, corresponding to the two scenarios presented in the original article have been implemented, although only the first scenario is fully developed.
 
-
-<p align="center">
-  <img src=https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/scheme_full.png/>
-</p>
 Adittionaly in some parts, the implementation makes advantage of parallel computations to process the tens of millions of data to be computed in a single computer.
 
+# Data
+The OPTRAM models needs intensive data from surface soil moisture sensors and satellite images. In the following subsections both sources will be detailed. This graphs summarizes the process of data processing: 
+
+<p align="center">
+  <img src="https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/scheme_full.png/"  width="400">
+</p>
+
+- **1-3** : Sensor processing, the filtering of incomplete sensors will be performed here.
+- **4-8** : Very complex but made easy by [sen2r](http://sen2r.ranghetti.info/index.html) library in R, rasterio and gdal in python.
+- **9**   : This data fusion is key to obtain a full implementation of the OPTRAM model. The sensor readings of each station are matched with the nearest pixels of each image at the acqusition time, allowing for volumetric content water (%) predictions once the model is validated. Aditionally a big speed up is achieved using the parallel library [Dask](https://dask.org/). 
+- **10**  : The Scheme Classification Layer ([SCL](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm)) already computed by Copernicus is used to mask the defective pixels, i.e., clouds, snow, shadows, etc.
+- **11**  : Finally, with the filtered data and inSitu fusion observations the OPTRAM can be fitted.
 
 ## NDVI-STR space
 
