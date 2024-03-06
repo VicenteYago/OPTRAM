@@ -1,5 +1,5 @@
 
-![WG-nologo.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/WG-nologo.png)
+![WG-nologo.png](https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/WG-nologo.png)
 
 # Implementation of Optical Trapezoid Model (OPTRAM) with Sentinel 2 
 
@@ -21,20 +21,20 @@ Adittionaly in some parts, the implementation makes advantage of parallel comput
 ## NDVI-STR space
 
 The wet and dry edges are fitted by visual matching as recomended by the authors.
-![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/img/NDVI_STR.png)
+![NDVI_STR.png](https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/NDVI_STR.png)
 
 `inSitu_obs` are the images pixels corresponing to the soil moisture stations al the time of the acquisition by the sentinel2 satellites.
 
 ## Results 
 
-![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/img/scenario1_2_comparison.png)
+![scenario_comparison](https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/scenario1_2_comparison.png)
 
 More detailed insight about the heavy scatter can be found in the notebook, section __Model parametrization__.
 
 ## W maps
 Normalized soil moisture content were also computed for all images.
 <p align="center">
-  <img src=https://github.com/VicenteYago/OPTRAM/blob/main/img/example_W_2.png/>
+  <img src=https://github.com/VicenteYago/OPTRAM/blob/main/WalnutGulch/img/example_W_2.png/>
 </p>
 
 The SCL band is applied at each image, masking diferent pixels at each date.
